@@ -1,9 +1,12 @@
+require_relative 'hand'
+
 class Deck
   attr_reader :cards
 
   def initialize
     @cards = []
     new_deck
+    shuffle
   end
 
   def new_deck
@@ -15,7 +18,7 @@ class Deck
   end
 
   def shuffle
-    @cards.shuffle
+    @cards.shuffle!
   end
 
   def deal(num)

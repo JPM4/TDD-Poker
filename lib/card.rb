@@ -3,8 +3,7 @@ require_relative 'hand.rb'
 
 class Card
 
-  RANKS = { :ace => 1,
-            :two => 2,
+  RANKS = { :two => 2,
             :three => 3,
             :four => 4,
             :five => 5,
@@ -15,8 +14,8 @@ class Card
             :ten => 10,
             :jack => 11,
             :queen => 12,
-            :king => 13
-            }
+            :king => 13,
+            :ace => 14 }
 
   SUITS = [:club, :diamond, :spade, :heart]
 
